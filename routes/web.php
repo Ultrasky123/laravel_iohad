@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('webpage.index');
-});
+})->name('index');
+Route::get('/', function () {
+    return view('layout');
+})->name('layout');
