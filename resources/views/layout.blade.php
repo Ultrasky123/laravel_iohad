@@ -17,11 +17,12 @@
         {{-- Header --}}
         <nav class="navbar navbar-dark bg-transparent fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="{{ asset('img/logo 3 warna terang.png') }}"
-                        style="height: auto; width: 40%"></a>
-                <a class="navbar-brand" href="teams">Teams</a>
-                <a class="navbar-brand" href="livescreen">LiveScreen View</a>
-
+                <div class="gambar1" style="width: 20%; height: 20%">
+                    <a class="navbar-brand" href="/"><img src="{{ asset('img/logo 3 warna terang.png') }}"
+                            style="height: auto; max-width: 100%"></a>
+                    {{-- <a class="navbar-brand" href="teams">Teams</a>
+                <a class="navbar-brand" href="livescreen">LiveScreen View</a> --}}
+                </div>
                 {{-- Offcanvas Additional Page --}}
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -31,7 +32,7 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hamburger Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>

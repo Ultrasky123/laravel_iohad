@@ -16,15 +16,16 @@
     <div class="container-fluid" style="background-color: #C4C4C4; height: 576px;">
         <div class="row" style="height: 80px">
             <div class="col-sm-1"></div>
-            <div class="col-sm-1">
-                {{-- <div class="rounded-rectangle text-center" style="border: 5px solid red">Instructors</div> --}}
+            <div class="col-sm-2 fs-3 rounded-rectangle" style="display: flex; align-items: center; margin-top: 1rem">
+                <div style="display: flex; height: 80px; align-items: center; float: right">
+                    Instructors</div>
             </div>
-            {{-- <div class="col-sm-8 text-center text-black fs-1" style="border: 5px solid red">
+            <div class="col-sm-6 text-center text-black fs-1">
                 Meet Our Team
-            </div> --}}
-            <div class="col-sm-1">
-                {{-- <div class="rounded-rectangle text-center" style="height: 50%; border: 5px solid red">
-                    Students</div> --}}
+            </div>
+            <div class="col-sm-2 fs-3 rounded-rectangle" style="display: flex; align-items: center; margin-top: 1rem">
+                <div style="display: flex; height: 80px; align-items: center; float: right">
+                    Students</div>
             </div>
             <div class="col-sm-1"></div>
         </div>
