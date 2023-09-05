@@ -1,0 +1,73 @@
+/* Styling for the quarter circle */
+.quarter-circle {
+    width: 30%; /* 50% of the viewport's smaller dimension (width or height) */
+    height: 55vmin; /* 50% of the viewport's smaller dimension (width or height) */
+    background-color: #3498db; /* Background color for visualization */
+    border-top-left-radius: 100%; /* Create a quarter circle shape */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Stick to the left of the viewport */
+    transform: rotate(180deg);
+    background-color: #C4C4C4;
+}
+
+.quarter-circle2 {
+    width: 30%; /* 50% of the viewport's smaller dimension (width or height) */
+    height: 55vmin; /* 50% of the viewport's smaller dimension (width or height) */
+    background-color: #3498db; /* Background color for visualization */
+    border-top-left-radius: 100%; /* Create a quarter circle shape */
+    position: absolute; /* Position it absolutely */
+    right: 0; /* Stick to the top of the viewport */
+    bottom: 0; /* Stick to the left of the viewport */
+    /* transform: rotate(180deg); */
+    background-color: #C4C4C4;
+}
+
+/* Optional: Center the content within the quarter circle */
+.quarter-circle::before {
+    content: '';
+    display: block;
+    width: 50%; /* Center the content horizontally within the quarter circle */
+    height: 50%; /* Center the content vertically within the quarter circle */
+    margin: auto;
+}
+
+.quarter-circle2::before {
+    content: '';
+    display: block;
+    width: 50%; /* Center the content horizontally within the quarter circle */
+    height: 50%; /* Center the content vertically within the quarter circle */
+    margin: auto;
+}
+
+/* Optional: Add responsiveness with media queries */
+@media (max-width: 1024px) {
+    .quarter-circle {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 45vmin;
+    }
+    .quarter-circle2 {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 45vmin;
+    }
+}
+
+@media (max-width: 768px) {
+    .quarter-circle {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 35vmin;
+    }
+    .quarter-circle2 {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 35vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .quarter-circle {
+        width: 35%; /* Further adjust the width for even smaller screens */
+    }
+    .quarter-circle2 {
+        width: 35%; /* Further adjust the width for even smaller screens */
+    }
+}

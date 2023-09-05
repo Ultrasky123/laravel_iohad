@@ -19,3 +19,9 @@ Route::get('/', function () {
 Route::get('/layout', function () {
     return view('layout');
 })->name('layout');
+Route::get('/teams', function () {
+    return view('webpage.teams');
+})->name('teams');
+Route::get('/tes', function () {
+    return view('tes');
+})->name('tes');

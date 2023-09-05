@@ -1,0 +1,45 @@
+.rectangle{
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100px;
+    background-color: #008000;
+    padding: 15px 15px;
+}
+
+.trapesium {
+    width: 1500px;
+    height: 1000px;
+    /* width: 150%;  */
+    /* Lebar trapesium sebagai persentase */
+    /* padding-top: 50%; */
+    /* margin-left: 2%; */
+    /* Tinggi trapesium sebagai persentase (sesuai dengan perbandingan tinggi dan lebar) */
+    background-color: #C4C4C4; /* Warna latar belakang untuk visualisasi */
+    position: relative; /* Diperlukan untuk pemosisian absolut */
+    transform: rotate(90deg);
+    /* Mendefinisikan bentuk trapesium dengan clip-path */
+    clip-path: polygon(25% 0, 85% 0, 75% 100%, 25% 100%);
+  }
+  
+  /* Pemosisian tengah horizontal dan vertikal (opsional) */
+  .trapesium::before {
+    content: '';
+    display: block;
+    /* padding-bottom: 100%; */
+     /* Membuat pseudo-element dengan perbandingan aspek 1:1 */
+  }
+  
+  /* Media query untuk responsif */
+  @media (max-width: 768px) {
+    .trapesium {
+      width: 75%; /* Sesuaikan lebar trapesium untuk tampilan yang lebih kecil */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trapesium {
+      width: 90%; /* Sesuaikan lebar trapesium untuk tampilan yang lebih kecil lagi */
+    }
+  }
+  
