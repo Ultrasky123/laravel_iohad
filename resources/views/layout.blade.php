@@ -14,7 +14,7 @@
 <body>
 
     {{-- Header --}}
-    <nav class="navbar navbar-dark bg-black fixed-top">
+    <nav class="navbar navbar-dark bg-transparent fixed-top">
         <div class="gambar1" style="width: 20%; height: 20%">
             <a class="navbar-brand" href="/"><img src="{{ asset('img/logo 3 warna terang.png') }}"
                     style="height: auto; max-width: 100%"></a>

@@ -20,8 +20,11 @@ Route::get('/layout', function () {
     return view('layout');
 })->name('layout');
 Route::get('/teams', function () {
-    return view('webpage.teams');
+    return view('webpage.teams-mhs');
 })->name('teams');
+Route::get('/teams-dosen', function () {
+    return view('webpage.teams-dosen');
+})->name('teams-dosen');
 Route::get('/tes', function () {
     return view('tes');
 })->name('tes');

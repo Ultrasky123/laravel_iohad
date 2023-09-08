@@ -8,38 +8,145 @@
 }
 
 .trapesium {
-    width: 1500px;
+    width: 1300px;
     height: 1000px;
-    /* width: 150%;  */
-    /* Lebar trapesium sebagai persentase */
-    /* padding-top: 50%; */
-    /* margin-left: 2%; */
-    /* Tinggi trapesium sebagai persentase (sesuai dengan perbandingan tinggi dan lebar) */
-    background-color: #C4C4C4; /* Warna latar belakang untuk visualisasi */
-    position: relative; /* Diperlukan untuk pemosisian absolut */
+    margin-top: -11.5rem;
+    background-color: #C4C4C4;
+    position: relative;
     transform: rotate(90deg);
-    /* Mendefinisikan bentuk trapesium dengan clip-path */
     clip-path: polygon(25% 0, 85% 0, 75% 100%, 25% 100%);
   }
-  
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  /* .trapesium {
+    width: 816px;
+    height: 816px;
+    background-color: #C4C4C4;
+    position: relative;
+    transform: rotate(360deg);
+    clip-path: polygon(0% 0%, 85% 0%, 85% 100%, 15% 100%);
+    margin-top: -11.5rem
+  } */
+
+.trapesium2 {
+    width: 816px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    background-color: #C4C4C4;
+    position: relative;
+    transform: rotate(360deg);
+    clip-path: polygon(0% 0%, 80% 15%, 80% 100%, 0% 100%);
+}
+
   /* Pemosisian tengah horizontal dan vertikal (opsional) */
   .trapesium::before {
     content: '';
     display: block;
-    /* padding-bottom: 100%; */
-     /* Membuat pseudo-element dengan perbandingan aspek 1:1 */
   }
-  
+
+  /* Pemosisian tengah horizontal dan vertikal (opsional) */
+  .trapesium2::before {
+    content: '';
+    display: block;
+  }
+
+  /* Styling for the quarter circle */
+.quarter-circle {
+    width: 30%; /* 50% of the viewport's smaller dimension (width or height) */
+    height: 55vmin; /* 50% of the viewport's smaller dimension (width or height) */
+    background-color: #3498db; /* Background color for visualization */
+    border-top-left-radius: 100%; /* Create a quarter circle shape */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Stick to the left of the viewport */
+    transform: rotate(180deg);
+    background-color: #C4C4C4;
+}
+
+.quarter-circle2 {
+    width: 30%; /* 50% of the viewport's smaller dimension (width or height) */
+    height: 55vmin; /* 50% of the viewport's smaller dimension (width or height) */
+    background-color: #3498db; /* Background color for visualization */
+    border-top-left-radius: 100%; /* Create a quarter circle shape */
+    position: absolute; /* Position it absolutely */
+    right: 0; /* Stick to the top of the viewport */
+    bottom: 0; /* Stick to the left of the viewport */
+    /* transform: rotate(180deg); */
+    background-color: #C4C4C4;
+}
+
+/* Optional: Center the content within the quarter circle */
+.quarter-circle::before {
+    content: '';
+    display: block;
+    width: 50%; /* Center the content horizontally within the quarter circle */
+    height: 50%; /* Center the content vertically within the quarter circle */
+    margin: auto;
+}
+
+.quarter-circle2::before {
+    content: '';
+    display: block;
+    width: 50%; /* Center the content horizontally within the quarter circle */
+    height: 50%; /* Center the content vertically within the quarter circle */
+    margin: auto;
+}
+
   /* Media query untuk responsif */
+  @media (max-width: 1024px) {
+    .trapesium {
+      width: 1400px;
+      margin-top: -26.5rem;
+      height: 1320px;
+    }
+
+    .quarter-circle {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 45vmin;
+    }
+
+    .quarter-circle2 {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 45vmin;
+    }
+  }
   @media (max-width: 768px) {
     .trapesium {
-      width: 75%; /* Sesuaikan lebar trapesium untuk tampilan yang lebih kecil */
+    margin-top: -25.6rem;
+    }
+
+    .quarter-circle {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 35vmin;
+    }
+
+    .quarter-circle2 {
+        width: 30%; /* Adjust the width for smaller screens */
+        height: 35vmin;
     }
   }
-  
+
   @media (max-width: 480px) {
     .trapesium {
-      width: 90%; /* Sesuaikan lebar trapesium untuk tampilan yang lebih kecil lagi */
+    width: 1250px;
+    height: 1410px;
+    }
+
+    .quarter-circle {
+        width: 35%; /* Further adjust the width for even smaller screens */
+    }
+
+    .quarter-circle2 {
+        width: 35%; /* Further adjust the width for even smaller screens */
     }
   }
-  
