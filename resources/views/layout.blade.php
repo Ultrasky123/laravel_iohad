@@ -51,9 +51,7 @@
     {{-- End Of Header --}}
 
     {{-- Body Content --}}
-    {{-- <div class="container-fluid" style="width: 100%; height: 2576px; background-color: black"> --}}
     @yield('content')
-    {{-- </div> --}}
     {{-- End Of Body Content --}}
 
     {{-- Footer --}}

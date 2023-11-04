@@ -13,18 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home123', function () {
     return view('webpage.index');
 })->name('index');
-Route::get('/layout', function () {
+Route::get('/layout123', function () {
     return view('layout');
 })->name('layout');
-Route::get('/teams', function () {
+Route::get('/teams123', function () {
     return view('webpage.teams-mhs');
 })->name('teams');
-Route::get('/teams-dosen', function () {
+Route::get('/teams-dosen123', function () {
     return view('webpage.teams-dosen');
 })->name('teams-dosen');
-Route::get('/tes', function () {
+Route::get('/tes123', function () {
     return view('tes');
 })->name('tes');

@@ -100,10 +100,10 @@ class MPUController extends Controller
     {
         switch ($id) {
             case 1002:
-                $result = DB::table('mpu6050')->selectRaw('*')->orderBy('inputed_at', 'desc')->get();
+                $result = DB::table('mpu6050')->selectRaw('*')->orderBy('inputed_at', 'desc')->paginate(5);
                 break;
             case 301:
-                $result = DB::table('mpu6050_vibrate')->selectRaw('*')->orderBy('inputed_at', 'desc')->get();
+                $result = DB::table('mpu6050_vibrate')->selectRaw('*')->orderBy('inputed_at', 'desc')->paginate(5);
                 break;
             default:
                 return response()->json([

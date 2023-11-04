@@ -10,6 +10,11 @@
             Jatuh
             Diantara Bintang- <br> Bintang </div>
         <p class="text-white text-center" style="padding-top: 50px">~Ir Soekarno</p>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
     <div class="quarter-circle"></div>
     <div class="quarter-circle2"></div>

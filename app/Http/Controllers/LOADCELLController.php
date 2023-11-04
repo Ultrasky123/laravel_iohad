@@ -110,19 +110,19 @@ class LOADCELLController extends Controller
     {
         switch ($id) {
             case 801:
-                $result = loadcell_1::orderBy('event_id', 'desc')->get();
+                $result = loadcell_1::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 802:
-                $result = loadcell_2::orderBy('event_id', 'desc')->get();
+                $result = loadcell_2::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 803:
-                $result = loadcell_3::orderBy('event_id', 'desc')->get();
+                $result = loadcell_3::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 804:
-                $result = loadcell_4::orderBy('event_id', 'desc')->get();
+                $result = loadcell_4::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 805:
-                $result = loadcell_5::orderBy('event_id', 'desc')->get();
+                $result = loadcell_5::orderBy('event_id', 'desc')->paginate(5);
                 break;
             default:
                 return response()->json([

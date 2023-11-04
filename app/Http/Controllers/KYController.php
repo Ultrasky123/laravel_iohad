@@ -96,10 +96,10 @@ class KYController extends Controller
     {
         switch ($id) {
             case 603:
-                $result = telinga_kanan::orderBy('event_id', 'desc')->get();
+                $result = telinga_kanan::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 604:
-                $result = telinga_kiri::orderBy('event_id', 'desc')->get();
+                $result = telinga_kiri::orderBy('event_id', 'desc')->paginate(5);
                 break;
 
             default:

@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
 </head>
 
-<body>
-    <div class="rectangle"></div>
+<body style="background-color: #000">
+    <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </body>
 
 </html>

@@ -5,7 +5,12 @@
     <div class="container-fluid" style="width: 100%; height: 723px; background-color: black">
         <div class="text-center text-white fs-2" style="padding-top: 230px">Masa Depan Adalah Milik Mereka <br>
             Yang Mempersiapkan Hari Ini
-            <p class="text-white text-center" style="padding-top: 150px">Meet Our Best Instructor</p>
+            <p class="text-white text-center" style="padding-top: 100px">Meet Our Best Instructor</p>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <div class="quarter-circle"></div>
         <div class="quarter-circle2"></div>
@@ -37,13 +42,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" style="display: flex; justify-content: center; align-items: center">
+                <div class="col-3" style="display: flex; justify-content: center; align-items: center">
                     <div class="circle"></div>
                 </div>
-                <div class="col-4" style="display: flex; justify-content: center; align-items: center">
+                <div class="col-3" style="display: flex; justify-content: center; align-items: center">
                     <div class="circle"></div>
                 </div>
-                <div class="col-4" style="display: flex; justify-content: center; align-items: center">
+                <div class="col-3" style="display: flex; justify-content: center; align-items: center">
+                    <div class="circle"></div>
+                </div>
+                <div class="col-3" style="display: flex; justify-content: center; align-items: center">
                     <div class="circle"></div>
                 </div>
             </div>

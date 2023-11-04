@@ -95,10 +95,10 @@ class INMPController extends Controller
     {
         switch ($id) {
             case 601:
-                $result = inmp_kanan::orderBy('event_id', 'desc')->get();
+                $result = inmp_kanan::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 602:
-                $result = inmp_kiri::orderBy('event_id', 'desc')->get();
+                $result = inmp_kiri::orderBy('event_id', 'desc')->paginate(5);
                 break;
 
             default:

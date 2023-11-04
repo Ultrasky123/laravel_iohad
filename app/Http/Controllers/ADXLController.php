@@ -108,16 +108,16 @@ class ADXLController extends Controller
     {
         switch ($id) {
             case 201:
-                $result = tangan_kanan::orderBy('event_id', 'desc')->get();
+                $result = tangan_kanan::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 202:
-                $result = tangan_kiri::orderBy('event_id', 'desc')->get();
+                $result = tangan_kiri::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 203:
-                $result = kaki_kanan::orderBy('event_id', 'desc')->get();
+                $result = kaki_kanan::orderBy('event_id', 'desc')->paginate(5);
                 break;
             case 204:
-                $result = kaki_kiri::orderBy('event_id', 'desc')->get();
+                $result = kaki_kiri::orderBy('event_id', 'desc')->paginate(5);
                 break;
 
             default:
